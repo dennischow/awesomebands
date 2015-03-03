@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Author : Dennis Chow */
+
+*, :before, :after {margin: 0; padding: 0; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+HTML, BODY {width: 100%; height: 100%;}
+BODY {position: relative; color: #000; font-size: 16px; font-family: Helvetica, Arial, sans-serif; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;}
+
+
+#footer {
+	position: fixed;
+	left: 0; bottom: 0;
+	width: 100%;
+	background-color: black;
+	background-color: rgba(0,0,0,0.7);
+}
+#footer P {
+	padding: 15px;
+	text-align: center;
+	font-size: 12px;
+	color: #CCC;
+}
+
+/* Page View */
+.page-wrapper {
+	display: table;
+	width: 100%; height: 100%;
+	background-position: center center;
+	background-repeat: repeat;
+	background-image: url(../images/site-bg.jpg);
+}
+
+/* Page Container */
+.page-container {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Awesome Bands Header */
+.heading {
+	display: inline-block;
+	margin-bottom: 25px;
+	width: 600px; height: 100px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(../images/awesomebands-header.png);
+	text-indent: -9999px;
+}
+
+/* Leaderboard Starts */
+#leaderboard {
+	display: inline-block;
+}
+
+#leaderboard UL {
+	list-style: none;
+	width: 452px;
+	background-color: #1E1E1E;
+	border: 5px #D0CFCF solid;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+
+#leaderboard LI {
+	position: relative;
+	left: 0;
+	opacity: 1;
+	padding: 12px 25px;	
+	border-top: 1px #404040 solid;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+#leaderboard LI:first-child {
+	border-top: none;
+}
+
+#leaderboard LI.hidden {
+	opacity: 0;
+	left: -15px;
+}
+
+#leaderboard P {
+	position: relative;
+	text-align: left;
+	color: white;
+	font-size: 1em;
+}
+
+#leaderboard .band-name {
+	font-weight: bold;
+}
+
+#leaderboard .mentioned {
+	float: right;
+}
+
+#leaderboard .mentioned .count {
+	color: #9E0B0F;
+}
+
+#leaderboard .mentioned .text {
+	margin-left: 5px;
+	color: #D0CFCF;
+	font-size: 0.8em;
+}
+/* Leaderboard Ens */
+
